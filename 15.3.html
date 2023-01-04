@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .box{
+    margin: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+
+  }
+
+
+  .container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns:20vw 30vw 30vw 20vw ;
+    grid-template-rows:10vh 20vh 10vh;
+    grid-template-areas: 
+    "header header header header"
+    "side body body side2"
+    "footer footer footer footer"
+    ;
+
+  }
+
+
+  .child-1{
+    background-color: red;
+    grid-area: header;
+  }
+
+  .child-2{
+    background-color: blue;
+    grid-area: side ;
+
+  }
+  .child-3{
+    background-color: green;
+    grid-area: body;
+    
+    
+  }
+  .child-4{
+    background-color: purple;
+    grid-area: side2;
+  }
+  .child-5{
+    background-color: yellow;
+    grid-area: footer;
+  }
+
+
+  @media (min-width:501px) and (max-width:768px){
+    .container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "side body body body"
+    "side2 side2 side2 side2" 
+    "footer footer footer footer"
+    ;
+
+  }
+
+
+  .child-1{
+    background-color: red;
+    grid-area: header;
+  }
+
+  .child-2{
+    background-color: blue;
+    grid-area: side ;
+
+  }
+  .child-3{
+    background-color: green;
+    grid-area: body;
+    
+    
+  }
+  .child-4{
+    background-color: purple;
+    grid-area: side2;
+  }
+  .child-5{
+    background-color: yellow;
+    grid-area: footer;
+  }
+  }
+
+
+  @media (max-width:500px) {
+    .container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "side side side side"
+    "body body body body"
+    "side2 side2 side2 side2" 
+    "footer footer footer footer"
+    ;
+
+  }
+
+
+  .child-1{
+    background-color: red;
+    grid-area: header;
+  }
+
+  .child-2{
+    background-color: blue;
+    grid-area: side ;
+
+  }
+  .child-3{
+    background-color: green;
+    grid-area: body;
+    
+    
+  }
+  .child-4{
+    background-color: purple;
+    grid-area: side2;
+  }
+  .child-5{
+    background-color: yellow;
+    grid-area: footer;
+  }
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="box child-1">header</div>
+    <div class="box child-2">sidebar</div>
+    <div class="box child-3">content</div>
+    <div class="box child-4">side bar 2</div>
+    <div class="box child-5">footer</div>
+  
+  </div>
+
+</body>
+</html>

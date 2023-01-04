@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+ 
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+.box{
+  /* background-color: blue;
+  border: solid red 1px;
+  font-size :20px; */
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.container {
+    margin: 2vh;
+    background-color: gray;
+    height: 90vh;
+    width: 90vw;
+    margin:10vh auto;
+
+    display: grid;
+    grid-template-columns: repeat(10,1fr)  ;
+    grid-template-rows: repeat(7 ,1fr);
+    grid-gap: 1rem;
+    
+  }
+  .img-1{
+      grid-column: 1/ span 3;
+      grid-row: 1 /span 1;
+
+  }
+  .img-2{
+      grid-column: 4/ span 4;
+      grid-row: 1 /span 2;
+    
+  }
+  .img-3{
+    grid-column: 8/ span 1;
+      grid-row: 1 /span 1;
+
+  }
+  .img-4{
+    grid-column: 9/ span 2;
+      grid-row: 1 /span 1;
+
+  }
+  .img-5{
+      grid-column: 1/ span 3;
+      grid-row: 2 /span 2;
+
+  }
+  .img-6{
+    grid-column: 4/ span 3;
+      grid-row:3 /span 1;
+
+  }
+  .img-7{
+    grid-column: 7/ span 1;
+      grid-row: 3 /span 1;
+
+  }
+  .img-8{
+    grid-column: 8/ span 2;
+      grid-row:  2/span 2;
+
+  }
+  .img-9{
+    grid-column: 10/ span 1;
+      grid-row:  2/span 2;
+
+  }
+  .img-10{
+    grid-column: 1/ span 2;
+      grid-row: 4 /span 4;
+
+  }
+  .img-11{
+    grid-column: 3/ span 3;
+      grid-row: 4 /span 4;
+
+  }
+  .img-12{
+    grid-column: 6/ span 1;
+      grid-row: 4 /span 4;
+
+    
+  }
+  .img-13{
+    grid-column: 7/ span 3;
+      grid-row: 4 /span 4;
+
+  }
+  .img-14{
+    grid-column: 10/span 1;
+      grid-row: 4/span 4;
+  }
+  
+
+
+  @media (min-width:501px) and (max-width:768px){
+    .container {
+    margin: 2vh;
+    background-color: gray;
+    height: 98vh;
+    width: 98vw;
+    margin: auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 2rem;
+    
+  }
+  .img-1{
+      grid-column: 1/span 3;
+      grid-row: 1/span 1;
+  }
+  .img-2{
+    grid-column: 4/span 2;
+      grid-row: 1/span 2;
+
+  }
+  .img-3{
+    grid-column: 6/span 3;
+      grid-row: 1/span 3;
+
+
+  }
+  .img-4{
+    grid-column: 1/span 2;
+      grid-row: 2/span 1;
+
+
+  }
+  .img-5{
+    grid-column: 3/span 1;
+      grid-row: 2/span 2;
+
+
+  }
+  .img-6{
+    grid-column: 4/span 2;
+      grid-row: 3/span 1;
+
+  }
+  .img-7{
+    grid-column: 1/span 2;
+      grid-row: 3/span 2;
+
+  }
+  .img-8{
+    grid-column: 3/span 3;
+      grid-row: 4/span 2;
+
+  }
+  .img-9{
+    grid-column: 6/span 3;
+      grid-row: 4/span 1;
+
+  }
+  .img-10{
+    grid-column: 1/span 2;
+      grid-row: 5/span 2;
+
+  }
+  .img-11{
+    grid-column: 3/span 3;
+      grid-row: 6/span 1;
+
+  }
+  .img-12{
+    grid-column: 6/span 1;
+      grid-row: 5/span 2;
+
+    
+  }
+  .img-13{
+    grid-column: 7/span 2;
+      grid-row: 5/span 1;
+
+  }
+  .img-14{
+    grid-column: 7/span 2;
+      grid-row: 5/span 2;
+
+  }
+
+
+  }
+
+
+
+  @media  (max-width:500px){
+    .container {
+    margin: 2vh;
+    background-color: gray;
+    height: 98vh;
+    width: 98vw;
+    margin: auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 2rem;
+    
+  }
+  .img-1{
+      grid-column: 1/span 3;
+      grid-row: 1/span 1;
+  }
+  .img-2{
+    grid-column: 4/span 2;
+      grid-row: 1/span 2;
+
+  }
+  .img-3{
+    grid-column: 6/span 3;
+      grid-row: 1/span 3;
+
+
+  }
+  .img-4{
+    grid-column: 1/span 2;
+      grid-row: 2/span 1;
+
+
+  }
+  .img-5{
+    grid-column: 3/span 1;
+      grid-row: 2/span 2;
+
+
+  }
+  .img-6{
+    grid-column: 4/span 2;
+      grid-row: 3/span 1;
+
+  }
+  .img-7{
+    grid-column: 1/span 2;
+      grid-row: 3/span 2;
+
+  }
+  .img-8{
+    grid-column: 3/span 3;
+      grid-row: 4/span 2;
+
+  }
+  .img-9{
+    grid-column: 6/span 3;
+      grid-row: 4/span 1;
+
+  }
+  .img-10{
+    grid-column: 1/span 2;
+      grid-row: 5/span 2;
+
+  }
+  .img-11{
+    grid-column: 3/span 3;
+      grid-row: 6/span 1;
+
+  }
+  .img-12{
+    grid-column: 6/span 1;
+      grid-row: 5/span 2;
+
+    
+  }
+  .img-13{
+    grid-column: 7/span 2;
+      grid-row: 5/span 1;
+
+  }
+  .img-14{
+    grid-column: 7/span 2;
+      grid-row: 6/span 1;
+
+  }
+
+
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="box img-1"><img src="img/1.jpeg" alt=""></div>
+    <div class="box img-2"><img src="img/2.jpeg" alt=""></div>
+    <div class="box img-3"><img src="img/3.jpeg" alt=""></div>
+    <div class="box img-4"><img src="img/4.jpeg" alt=""></div>
+    <div class="box img-5"><img src="img/5.jpeg" alt=""></div>
+    <div class="box img-6"><img src="img/6.jpeg" alt=""></div>
+    <div class="box img-7"><img src="img/7.jpeg" alt=""></div>
+    <div class="box img-8"><img src="img/8.jpeg" alt=""></div>
+    <div class="box img-9"><img src="img/9.jpeg" alt=""></div>
+    <div class="box img-10"><img src="img/10.jpeg" alt=""></div>
+    <div class="box img-11"><img src="img/11.jpeg" alt=""></div>
+    <div class="box img-12"><img src="img/12.jpeg" alt=""></div>
+    <div class="box img-13"><img src="img/13.jpeg" alt=""></div>
+    <div class="box img-14"><img src="img/14.jpeg" alt=""></div>
+  </div>
+</body>
+
+</html>
